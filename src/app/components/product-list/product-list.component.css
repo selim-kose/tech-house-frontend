@@ -1,0 +1,24 @@
+
+.card {
+   width: 18rem;
+   box-shadow: 7px 7px 7px rgb(152, 152, 152);
+   margin-bottom: 3rem;
+   border: none;
+}
+.card a {
+   text-decoration: none;
+}
+
+.card:hover {
+   transition: 0.4s;
+   transform: translate(2px,2px);
+}
+
+ .product-box {
+   margin-bottom: 60px;
+   box-shadow:2px 5px 5px rgb(167, 167, 167);
+ }
+
+ .price {
+   color: rgb(180, 0, 0);
+ }
