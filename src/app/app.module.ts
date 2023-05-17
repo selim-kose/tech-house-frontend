@@ -17,8 +17,15 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormService } from './services/form-service';
 import { CheckoutService } from './services/checkout.service';
+import { LoginComponent } from './components/login/login.component';
+import { LoginStatusComponent } from './components/login-status/login-status.component';
+import { OKTA_CONFIG, OktaAuthModule } from '@okta/okta-angular';
 
+import AppConfig from '../app/config/app-config'
+import { OktaAuth } from '@okta/okta-auth-js';
 
+const oktaConfig = AppConfig.oidc;
+const oktaAuth = new OktaAuth(oktaConfig)
 
 @NgModule({
   declarations: [
@@ -29,7 +36,9 @@ import { CheckoutService } from './services/checkout.service';
     ProductDetailsComponent,
     CartStatusComponent,
     CartDetailsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    LoginComponent,
+    LoginStatusComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +46,10 @@ import { CheckoutService } from './services/checkout.service';
     HttpClientModule,
     RouterModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    OktaAuthModule
   ],
-  providers: [ProductService, FormService],
+  providers: [ProductService, FormService, { provide: OKTA_CONFIG, useValue: { oktaAuth } }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
