@@ -3,14 +3,15 @@ import { Injectable } from '@angular/core';
 import { Observable, map, of } from 'rxjs';
 import { Country } from '../common/country';
 import { City } from '../common/city';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FormService {
 
-  private countriesUrl = 'http://localhost:8080/api/countries'
-  private citiesUrl = 'http://localhost:8080/api/cities'
+  private countriesUrl = environment.techHouseBaseUrl + '/countries'
+  private citiesUrl = environment.techHouseBaseUrl + '/cities'
 
   constructor(private httpClient: HttpClient) { }
 

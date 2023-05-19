@@ -51,13 +51,22 @@
               ],
               "outputHashing": "all"
             },
+            "qa": {
+              "fileReplacements": [{"replace": "src/environments/environment.ts", "with": "src/environments/environment.qa.ts"}]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -67,6 +76,9 @@
           "configurations": {
             "production": {
               "browserTarget": "tech-house:build:production"
+            },
+            "qa":{
+              "browserTarget": "tech-house:build:qa"
             },
             "development": {
               "browserTarget": "tech-house:build:development"
