@@ -1,7 +1,7 @@
-<form class="row col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 " role="search">
-
+<form class=" mb-3 mb-lg-0 me-lg-3 " role="search">
+<div class="row ">
    <input #searchInput type="text" class="form-control form-control-dark text-bg-dark col" placeholder="Search products..."
       (keyup.enter)="searchProduct(searchInput.value)" aria-label="Search">
-     <button class="btn btn-outline-light btn-sm col col-auto"  (click)="searchProduct(searchInput.value)">Search</button> 
-
+     <button class="btn btn-outline-light btn-sm col col-auto ms-2"  (click)="searchProduct(searchInput.value)">Search</button> 
+   </div>
  </form>

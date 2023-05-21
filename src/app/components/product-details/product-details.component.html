@@ -2,12 +2,12 @@
    <div class="container-fluid">
        <img src="{{product.imageUrl}}" > 
          <h3>{{product.name}}</h3>
-         <p class="price">{{product.price | currency: 'SEK'}}</p>
-         <button (click)="addToCart()" class="btn btn-dark btn-sm">Add to cart</button>  
+         <p class="price">{{product.price | currency: 'USD'}}</p>
+         <button (click)="addToCart()" class="btn btn-dark btn-m">Add to cart</button>  
          <hr>
          <h3>Product description</h3>
          <p>{{product.description}}</p>
-         <a class="mt-5"  routerLink="/products">Back to products</a>
+         <a class="btn btn-dark mt-5 mb-4"  routerLink="/products">Back to products</a>
    </div>
 </div>
 
