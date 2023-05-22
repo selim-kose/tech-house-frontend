@@ -126,7 +126,7 @@
  }
  
  .main-content {
-   padding-top: 116px;
+   padding-top: 5rem;
    min-height: 100vh;
  }
  
@@ -225,12 +225,12 @@
  }
  
  .au-input-xl {
-   min-width: 935px;
+   min-width: 30rem;
  }
  
  input.au-input.au-input-xl {
-   border-radius: 40px !important;
-   margin-right: 15px;
+   border-radius: 5rem !important;
+   
  }
  
  .au-input {

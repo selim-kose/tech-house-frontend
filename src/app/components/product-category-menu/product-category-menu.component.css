@@ -3,6 +3,14 @@ a:visited {
    font-size: 3px;
 }
 a:hover {
-   color: #6666;
-   background-color: aqua;
+   color: black;
+   background-color: white;
+}
+
+.active {
+   background-color: #203d8d;
+}
+
+a{
+   color: white;
 }

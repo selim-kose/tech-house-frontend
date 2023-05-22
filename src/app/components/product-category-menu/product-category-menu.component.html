@@ -2,8 +2,8 @@
    <nav>
       <ul class="nav nav-pills flex-column mb-auto">
          <li class="nav-item" *ngFor="let productCategory of productCategories">
-            <a class="nav-link text-white text-decoration-none" routerLink="/category/{{ productCategory.id }}"
-               routerLinkActive="nav-link active">{{ productCategory.categoryName }}</a>
+            <a class="nav-link text-decoration-none" routerLink="/category/{{ productCategory.id }}"
+            routerLinkActive="active">{{ productCategory.categoryName }}</a>
          </li>
       </ul>
    </nav>
