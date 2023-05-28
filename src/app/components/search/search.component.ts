@@ -17,7 +17,6 @@ export class SearchComponent implements OnInit {
 
 
   searchProduct(value: string) {
-    console.log(value);
     this.router.navigateByUrl(`/search/${value}`)
   }
 

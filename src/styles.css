@@ -593,17 +593,20 @@
  */
  
  .form-area {
-   background: #e5e5e5;
+   background: linear-gradient(rgb(245, 245, 245),white);
    position: relative;
-   margin-bottom: 45px;
-   padding: 50px 20px;
-   border: 3px solid #ccc;
+   margin-bottom: 5rem;
+   padding: 5rem 2rem;
+  /*  border: 3px solid #ccc;*/ 
+  box-shadow: 5px 5px 3px rgb(188, 188, 188);
+  max-width: 50rem;
  }
  .form-area h3 {
+  color: white;
    position: absolute;
    top: -26px;
    left: 13px;
-   background: #e5e5e5;
+   background: #232324;
    padding: 10px 20px;
    font-weight: 500;
    z-index: 23;
