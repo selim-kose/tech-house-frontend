@@ -6,8 +6,10 @@
     "tech-house": {
       "projectType": "application",
       "schematics": {
-        "inlinestyle": true,
-        "inlineTemplate": true
+        "@schematics/angular:component": {
+          "inlineStyle": true,
+          "inlineTemplate": true
+        }
       },
       "root": "",
       "sourceRoot": "src",
