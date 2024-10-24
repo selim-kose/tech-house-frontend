@@ -29,9 +29,9 @@
                <div class="col-md-6">
                   <div class="row">
                      <div class="col-md-9" style="padding-left: 30%">
-                        <ngb-pagination 
-                        [(page)]="pageNumber" 
-                        [pageSize]="pageSize" 
+                        <ngb-pagination
+                        [(page)]="pageNumber"
+                        [pageSize]="pageSize"
                         [collectionSize]="totalElements"
                         [maxSize]="5"
                         [boundaryLinks]="true"
@@ -42,7 +42,7 @@
 
                      <div class="col-md-3 mt-2" style="text-align: right">
                         <span class="mr-2">Page Size</span>
-                        <select #pageSizeChoise (change)="updatePageSize(pageSizeChoise.value)" > 
+                        <select #pageSizeChoise (change)="updatePageSize(pageSizeChoise.value)" >
                            <option selected="true">5</option>
                            <option>10</option>
                            <option>20</option>

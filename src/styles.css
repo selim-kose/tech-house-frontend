@@ -1,4 +1,4 @@
-/* 
+/*
  * ----------------------------
  * Common CSS
  * ----------------------------
@@ -11,7 +11,7 @@
    -moz-box-sizing: border-box;
    box-sizing: border-box;
  }
- 
+
  body {
    font-family: Poppins, sans-serif;
    font-weight: 400;
@@ -21,39 +21,39 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
  }
- 
+
  ul {
    margin: 0;
  }
- 
+
  button,
  input[type="button"] {
    cursor: pointer;
  }
- 
+
  button:focus,
  input:focus {
    outline: 0;
  }
- 
+
  input {
    border: none;
  }
- 
+
  button {
    border: none;
    background: 0 0;
  }
- 
+
  img {
    max-width: 100%;
    height: auto;
  }
- 
+
  p {
    margin: 0;
  }
- 
+
  h1,
  h2,
  h3,
@@ -65,42 +65,42 @@
    margin: 0;
    line-height: 1.2;
  }
- 
+
  h1 {
    font-size: 36px;
  }
- 
+
  h2 {
    font-size: 30px;
  }
- 
+
  h3 {
    font-size: 24px;
  }
- 
+
  h4 {
    font-size: 18px;
  }
- 
+
  h5 {
    font-size: 15px;
  }
- 
+
  h6 {
    font-size: 13px;
  }
- 
+
  a {
    display: inline-block;
  }
- 
+
  a:active,
  a:focus,
  a:hover {
    text-decoration: none;
    outline: 0;
  }
- 
+
  a,
  a:hover {
    -webkit-transition: all 0.3s ease;
@@ -108,41 +108,41 @@
    -moz-transition: all 0.3s ease;
    transition: all 0.3s ease;
  }
- 
+
  /*Layout Css*/
  .section-content-p35 {
    padding: 0 35px;
  }
- 
+
  .page-wrapper {
    overflow: hidden;
    background: #e5e5e5;
    padding-bottom: 8vh;
  }
- 
+
  .page-container {
    background: #e5e5e5;
    padding-left: 200px;
  }
- 
+
  .main-content {
    padding-top: 5rem;
    min-height: 100vh;
  }
- 
+
  aside.menu-sidebar.d-none.d-lg-block.clr {
    background: 0 0;
    z-index: 99999999;
    height: 75px;
    box-shadow: -2px 0 4px #0000003b;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Header Desktop Section
  * ----------------------------
  */
- 
+
  .header-desktop {
    background: #0da8e4;
    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
@@ -155,7 +155,7 @@
    height: 75px;
    z-index: 3;
  }
- 
+
  .header-desktop .section-content {
    overflow: visible;
    position: absolute;
@@ -168,7 +168,7 @@
    -o-transform: translateY(-50%);
    transform: translateY(-50%);
  }
- 
+
  .header-wrap {
    display: -webkit-box;
    display: -webkit-flex;
@@ -186,7 +186,7 @@
    -ms-flex-pack: justify;
    justify-content: space-between;
  }
- 
+
  .header-button {
    display: -webkit-box;
    display: -webkit-flex;
@@ -199,40 +199,40 @@
    -ms-flex-align: center;
    align-items: center;
  }
- 
+
  .number {
    padding: 6px 0;
  }
- 
+
  .arrows i {
    font-size: 30px;
    padding: 4px 4px;
  }
- 
+
  section {
    position: relative;
  }
- 
+
  .section-content {
    position: relative;
    margin: 0 auto;
    z-index: 1;
  }
- 
+
  .section-content-p30 {
    padding: 0 30px;
    width: 80rem;
  }
- 
+
  .au-input-xl {
    min-width: 30rem;
  }
- 
+
  input.au-input.au-input-xl {
    border-radius: 5rem !important;
-   
+
  }
- 
+
  .au-input {
    line-height: 43px;
    border: 1px solid #e5e5e5;
@@ -247,11 +247,11 @@
    -moz-transition: all 0.5s ease;
    transition: all 0.5s ease;
  }
- 
+
  .cart-area.d-n {
    display: block;
  }
- 
+
  .cart-area i {
    font-size: 22px;
    float: left;
@@ -259,7 +259,7 @@
    color: #fff;
    margin-left: 15px;
  }
- 
+
  .total {
    background: #203d8d;
    line-height: 43px;
@@ -270,7 +270,7 @@
    margin-top: 7px;
    padding-left: 17px;
  }
- 
+
  .total span {
    display: inline-block;
    background: #fff;
@@ -280,7 +280,7 @@
    border-bottom-right-radius: 20px;
    margin-left: 11px;
  }
- 
+
  .form-header {
    display: -webkit-box;
    display: -webkit-flex;
@@ -288,7 +288,7 @@
    display: -ms-flexbox;
    display: flex;
  }
- 
+
  .au-btn-submit {
    position: relative;
    right: 0;
@@ -300,11 +300,11 @@
    border-radius: 43px;
    background: #205b8d;
  }
- 
+
  .au-btn-submit:hover {
    background: #05143f;
  }
- 
+
  .au-btn-submit > i {
    font-size: 20px;
    color: #fff;
@@ -317,13 +317,13 @@
    -o-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Left Menu Bar
  * ----------------------------
  */
- 
+
  .menu-sidebar {
    width: 200px;
    position: fixed;
@@ -333,7 +333,7 @@
    background: #fff;
    overflow-y: auto;
  }
- 
+
  .menu-sidebar .logo {
    background: #fff;
    height: 75px;
@@ -355,49 +355,49 @@
    position: relative;
    z-index: 3;
  }
- 
+
  .menu-sidebar .navbar-list .navbar-sub-list {
    display: none;
    padding-left: 34px;
  }
- 
+
  .menu-sidebar .navbar-list .navbar-sub-list li a {
    padding: 11.5px 0;
  }
- 
+
  .menu-sidebar-content {
    position: relative;
    height: -webkit-calc(100vh - 75px);
    height: -moz-calc(100vh - 75px);
    height: calc(100vh - 75px);
  }
- 
+
  .navbar-sidebar {
    padding: 35px;
    padding-bottom: 0;
  }
- 
+
  .navbar-sidebar .navbar-list li a {
    display: block;
    color: #555;
    font-size: 16px;
    padding: 5px 0;
  }
- 
+
  .navbar-sidebar .navbar-list li a i {
    margin-right: 19px;
  }
- 
+
  .navbar-sidebar .navbar-list li a:hover {
    color: #0da8e4;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Header Mobile Section
  * ----------------------------
  */
- 
+
  .header-mobile {
    position: absolute;
    top: 0;
@@ -534,13 +534,13 @@
  .main-content.page-m {
    padding: 10% 30% 10% 5% !important;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Products List
  * ----------------------------
  */
- 
+
  .product-box img {
    width: 150px;
  }
@@ -555,7 +555,7 @@
   margin-bottom: 60px;
   box-shadow:2px 5px 5px rgb(167, 167, 167);
 }
- 
+
  .items select {
    width: 100px;
    height: 40px;
@@ -565,7 +565,7 @@
    outline: 0;
    margin-left: 5px;
  }
- 
+
  .price {
    margin: 15px 0 0;
    font-weight: 800;
@@ -585,19 +585,19 @@
    font-weight: 500;
    color: #585858;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Shopping Cart Checkout
  * ----------------------------
  */
- 
+
  .form-area {
    background: linear-gradient(rgb(245, 245, 245),white);
    position: relative;
    margin-bottom: 5rem;
    padding: 5rem 2rem;
-  /*  border: 3px solid #ccc;*/ 
+  /*  border: 3px solid #ccc;*/
   box-shadow: 5px 5px 3px rgb(188, 188, 188);
   max-width: 50rem;
  }
@@ -702,13 +702,13 @@
  select {
    color: #828482;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Shopping Cart Details
  * ----------------------------
  */
- 
+
  .table {
    margin: 0;
  }
@@ -738,13 +738,13 @@
    outline: 0;
    margin-left: 5px;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Product Details
  * ----------------------------
  */
- 
+
  .price {
    margin: 15px 0 0;
    font-weight: 800;
@@ -753,18 +753,18 @@
  .detail-section {
    margin-top: 60px;
  }
- 
+
  .detail-img {
    width: 30%;
  }
  /**/
- 
- /* 
+
+ /*
  * ----------------------------
  * Buttons
  * ----------------------------
  */
- 
+
  .btn-info {
    color: #fff;
    background-color: #0da8e4 !important;
@@ -784,17 +784,17 @@
    background: #0da8e4;
    color: #fff;
  }
- 
+
  .active-link {
    font-weight: bold;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Footer section
  * ----------------------------
  */
- 
+
  footer ul li a {
    color: #fff;
  }
@@ -813,13 +813,13 @@
    font-size: 14px;
    padding: 10px 20px;
  }
- 
- /* 
+
+ /*
  * ----------------------------
  * Media Queries
  * ----------------------------
  */
- 
+
  @media (max-width: 1600px) {
    .au-input-xl {
      min-width: 290px;
@@ -844,13 +844,13 @@
      margin-right: 5px;
    }
  }
- 
+
  @media (min-width: 1200px) {
    .container {
      max-width: 1320px;
    }
  }
- 
+
  @media (min-width: 992px) and (max-width: 1199px) {
    .cart-area i {
      font-size: 22px;
@@ -867,7 +867,7 @@
      display: none;
    }
  }
- 
+
  @media (max-width: 991px) {
    .section-content-p30 {
      padding: 0;
@@ -961,7 +961,7 @@
      justify-content: space-between;
    }
  }
- 
+
  @media (max-width: 767px) {
    .au-input-xl {
      min-width: 150px;
@@ -995,7 +995,7 @@
    a.logo img {
      width: 110px;
    }
- 
+
    .cart-area i {
      font-size: 22px;
      float: left;
@@ -1068,4 +1068,4 @@
      padding: 8px 0;
    }
  }
- 
+
