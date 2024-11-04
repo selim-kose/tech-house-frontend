@@ -13,13 +13,13 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
   currentCategoryId: number = 1;
-  previousCategoryId: number = 1;;
+  previousCategoryId: number = 1;
   searchMode: boolean = false;
 
 
   //Pagination propterties
   pageNumber: number = 1;
-  pageSize: number = 5;
+  pageSize: number = 10;
   totalElements: number = 0;
 
   previousKeyword: string = "";
