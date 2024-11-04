@@ -126,8 +126,8 @@
  }
 
  .main-content {
-   padding-top: 5rem;
-   min-height: 100vh;
+   padding: 3rem 0rem 3rem 0rem;
+
  }
 
  aside.menu-sidebar.d-none.d-lg-block.clr {
