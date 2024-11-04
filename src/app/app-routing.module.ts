@@ -9,6 +9,7 @@ import { OktaAuth } from '@okta/okta-auth-js'
 
 import { LoginComponent } from './components/login/login.component';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
+import {AdminViewComponent} from "./components/views/admin-view/admin-view.component";
 
 function sendToLoginPage(oktaAuth: OktaAuth, injector: Injector) {
   const router = injector.get(Router);
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'category/:id', component: ProductListComponent },
   { path: 'category', component: ProductListComponent },
   { path: 'products', component: ProductListComponent },
+  { path: 'admin', component: AdminViewComponent },
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: '**', redirectTo: '/products', pathMatch: 'full' }
 ];
