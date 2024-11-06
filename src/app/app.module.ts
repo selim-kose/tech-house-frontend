@@ -14,7 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartStatusComponent } from './components/cart-status/cart-status.component';
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FormService } from './services/form-service';
 import { CheckoutService } from './services/checkout.service';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
@@ -27,6 +27,7 @@ import { OKTA_CONFIG, OktaAuthModule, OktaCallbackComponent } from '@okta/okta-a
 import AppConfig from '../app/config/app-config'
 import { OktaAuth } from '@okta/okta-auth-js';
 import { AdminViewComponent } from './components/views/admin-view/admin-view.component';
+import { FileshareViewComponent } from './components/views/fileshare-view/fileshare-view.component';
 
 const oktaConfig = AppConfig.oidc;
 const oktaAuth = new OktaAuth(oktaConfig)
@@ -45,6 +46,7 @@ const oktaAuth = new OktaAuth(oktaConfig)
     LoginStatusComponent,
     OrderHistoryComponent,
     AdminViewComponent,
+    FileshareViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ const oktaAuth = new OktaAuth(oktaConfig)
     RouterModule,
     NgbModule,
     ReactiveFormsModule,
-    OktaAuthModule
+    OktaAuthModule,
+    FormsModule
   ],
   providers: [ProductService, FormService,
     { provide: OKTA_CONFIG, useValue: { oktaAuth } },
